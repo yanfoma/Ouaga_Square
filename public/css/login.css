@@ -1,0 +1,46 @@
+body{
+	background-image: url("../images/banner.jpg");
+	font-family: open sans, sans-serif;
+}
+#connection{
+	width:22%;
+	height:90%;
+	margin-left:68%;
+	margin-top:50px;
+	margin-bottom: 5px;
+	border:1px solid black;
+	background-color: rgb(244, 246, 246);
+	border-top: 5px solid rgb(174, 214, 241);
+	overflow: scroll;
+}
+img{
+	background-color: rgb(174, 214, 241);
+	height:100px;
+	width:40%;
+	border-radius: 50px;
+	margin-left: 30%;
+	margin-top: 15%;
+}
+input{
+	width: 80%;
+	margin-left: 10%;
+	height: 45px;
+	font-weight: 300;
+	font-size: 1em;
+	font-style: normal;
+	border: none;
+	border-bottom: 3px solid rgb(174, 214, 241);
+}
+input[type=submit]{
+	background: rgb(174, 214, 241);
+	font-weight: bold;
+}
+p{
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	margin-top: 20px;
+}
+a{
+	color: red;
+}
