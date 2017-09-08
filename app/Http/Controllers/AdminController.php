@@ -49,6 +49,22 @@ class AdminController extends BaseController
 			return view('admin_index');
 	}
 
+	/*  backup  */
+
+	public function backup()
+	{
+	
+			return view('backup');
+			return Redirect::to('sauvegarde');
+	}
+
+
+	public function sauvegarde()
+	{
+	
+			return view('sauvegarde');
+	}
+
 	/*  categorie de projet  */
 
 	public function creer_categorie_projet()
@@ -216,6 +232,14 @@ class AdminController extends BaseController
 		
 			return Redirect::to('creer_projet');
 		}
+	}
+
+	/*  detail projet  */
+
+	public function detail_projet($id)
+	{
+		$edit=Projet::find($id);
+		return View('detail_projet')->with('datas',$edit);
 	}
 
 }

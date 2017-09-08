@@ -18,7 +18,6 @@ class CreateCommentaireTable extends Migration
             $table->integer('projet_id')->unsigned();
 			$table->foreign('projet_id')->references('id')->on('projet');
             $table->text('nom');
-            $table->text('prenom');
             $table->text('avatar');
          // $table->rememberToken();
             $table->timestamps();

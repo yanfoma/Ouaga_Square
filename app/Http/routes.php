@@ -29,6 +29,12 @@ Route::post('log', 'AdminController@log');
 
 Route::get('/admin_index','AdminController@index');
 
+/*  backup de la BDD  */
+
+Route::get('/backup','AdminController@backup');
+
+Route::get('/sauvegarde','AdminController@sauvegarde');
+
 /*  categorie de projet  */
 
 Route::get('/creer_categorie_projet','AdminController@creer_categorie_projet');
@@ -58,3 +64,15 @@ Route::post('/c_projet_executeur','AdminController@c_projet_executeur');
 Route::get('/creer_projet','AdminController@creer_projet');
 
 Route::post('/c_projet','AdminController@c_projet');
+
+/*  detail projet  */
+
+Route::get('detail_projet{id}', 'AdminController@detail_projet'); 
+
+/*  enregister le projet au format pdf  */
+
+Route::get('pdf{id}', 'IndexController@pdf'); 
+
+/*  commentaire  */
+
+Route::post('/commentaire','IndexController@commentaire');

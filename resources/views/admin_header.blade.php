@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>OuagaSquare - Administration</title>
-	<link rel="stylesheet" type="text/css" href="makete_index.css">
+	<link rel="stylesheet" type="text/css" href="css/makete_index.css">
 	<script src="ckeditor/ckeditor.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
 	<div id="makete_main">
 	<div id="makete_menus_tohead">
 	<ul>
-		<li><a href="backup.php" style="width: 120px">Backup</a></li>
+		<li><a href="backup" style="width: 120px">Backup</a></li>
 		<li><a href="#">Logout</a></li>
 	</ul>
 	</div><br>
